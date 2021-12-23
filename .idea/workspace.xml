@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="VectorT" targetName="gmock" />
+      <config projectName="VectorT" targetName="gtest_main" />
+      <config projectName="VectorT" targetName="Google_Tests_run" />
+      <config projectName="VectorT" targetName="VectorT" />
+      <config projectName="VectorT" targetName="gtest" />
+      <config projectName="VectorT" targetName="gmock_main" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="92a5a72a-4055-4223-aede-596bbd8a77ce" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="684" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UwK6YoEl3eftSnkpU53joylMdw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.advertisement.text.has.clang-format" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../My_String" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\SoftwareProjects\CLionProjects\CPP\VectorT\test\lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\SoftwareProjects\CLionProjects\CPP\VectorT\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Google Test.Fixture">
+    <configuration name="Fixture" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="VectorT" TARGET_NAME="Google_Tests_run" RUN_TARGET_PROJECT_NAME="VectorT" RUN_TARGET_NAME="Google_Tests_run" TEST_CLASS="Fixture" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Fixture.Fixture_Constructor_Test" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="VectorT" TARGET_NAME="Google_Tests_run" RUN_TARGET_PROJECT_NAME="VectorT" RUN_TARGET_NAME="Google_Tests_run" TEST_CLASS="Fixture" TEST_METHOD="Fixture_Constructor_Test" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Fixture.Fixture_Index_Operator_Test" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="VectorT" TARGET_NAME="Google_Tests_run" RUN_TARGET_PROJECT_NAME="VectorT" RUN_TARGET_NAME="Google_Tests_run" TEST_CLASS="Fixture" TEST_METHOD="Fixture_Index_Operator_Test" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Fixture.Fixture_Insert_Remove_Test" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="VectorT" TARGET_NAME="Google_Tests_run" RUN_TARGET_PROJECT_NAME="VectorT" RUN_TARGET_NAME="Google_Tests_run" TEST_CLASS="Fixture" TEST_METHOD="Fixture_Insert_Remove_Test" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Fixture.Fixture_Various_Tests" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="VectorT" TARGET_NAME="Google_Tests_run" RUN_TARGET_PROJECT_NAME="VectorT" RUN_TARGET_NAME="Google_Tests_run" TEST_CLASS="Fixture" TEST_METHOD="Fixture_Various_Tests" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Google_Tests_run" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="VectorT" TARGET_NAME="Google_Tests_run" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="VectorT" RUN_TARGET_NAME="Google_Tests_run">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VectorT" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="VectorT" TARGET_NAME="VectorT" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="VectorT" RUN_TARGET_NAME="VectorT">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gmock" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="VectorT" TARGET_NAME="gmock" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gmock_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="VectorT" TARGET_NAME="gmock_main" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gtest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="VectorT" TARGET_NAME="gtest" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="VectorT" TARGET_NAME="gtest_main" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.Google_Tests_run" />
+      <item itemvalue="CMake Application.VectorT" />
+      <item itemvalue="CMake Application.gmock" />
+      <item itemvalue="CMake Application.gmock_main" />
+      <item itemvalue="CMake Application.gtest" />
+      <item itemvalue="CMake Application.gtest_main" />
+      <item itemvalue="Google Test.Fixture" />
+      <item itemvalue="Google Test.Fixture.Fixture_Constructor_Test" />
+      <item itemvalue="Google Test.Fixture.Fixture_Index_Operator_Test" />
+      <item itemvalue="Google Test.Fixture.Fixture_Insert_Remove_Test" />
+      <item itemvalue="Google Test.Fixture.Fixture_Various_Tests" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Google Test.Fixture" />
+        <item itemvalue="Google Test.Fixture.Fixture_Insert_Remove_Test" />
+        <item itemvalue="Google Test.Fixture.Fixture_Various_Tests" />
+        <item itemvalue="Google Test.Fixture.Fixture_Index_Operator_Test" />
+        <item itemvalue="Google Test.Fixture.Fixture_Constructor_Test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="92a5a72a-4055-4223-aede-596bbd8a77ce" name="Default Changelist" comment="" />
+      <created>1576262042357</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576262042357</updated>
+      <workItem from="1576262043795" duration="7129000" />
+      <workItem from="1576308696776" duration="5002000" />
+      <workItem from="1577994134377" duration="15804000" />
+      <workItem from="1578125443795" duration="2000" />
+      <workItem from="1578145276007" duration="3234000" />
+      <workItem from="1578149746343" duration="3128000" />
+      <workItem from="1578154759533" duration="18000" />
+      <workItem from="1578155036005" duration="11000" />
+      <workItem from="1578219513997" duration="327000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="772" y="272" key="#Inspections" timestamp="1578053506202">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="772" y="272" key="#Inspections/0.0.2560.1400/2560.349.1920.1040@0.0.2560.1400" timestamp="1578053506202" />
+    <state x="1146" y="294" width="448" height="811" key="#xdebugger.XInspectDialog" timestamp="1578152072009">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1146" y="294" width="448" height="811" key="#xdebugger.XInspectDialog/0.0.2560.1400/2560.349.1920.1040@0.0.2560.1400" timestamp="1578152072009" />
+    <state x="1010" y="395" key="FileChooserDialogImpl" timestamp="1576265904167">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1010" y="395" key="FileChooserDialogImpl/0.0.2560.1400/2560.349.1920.1040@0.0.2560.1400" timestamp="1576265904167" />
+    <state width="2509" height="372" key="GridCell.Tab.0.bottom" timestamp="1578219840985">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2509" height="372" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.349.1920.1040@0.0.2560.1400" timestamp="1578219840985" />
+    <state width="2509" height="372" key="GridCell.Tab.0.center" timestamp="1578219840985">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2509" height="372" key="GridCell.Tab.0.center/0.0.2560.1400/2560.349.1920.1040@0.0.2560.1400" timestamp="1578219840985" />
+    <state width="2509" height="372" key="GridCell.Tab.0.left" timestamp="1578219840985">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2509" height="372" key="GridCell.Tab.0.left/0.0.2560.1400/2560.349.1920.1040@0.0.2560.1400" timestamp="1578219840985" />
+    <state width="2509" height="372" key="GridCell.Tab.0.right" timestamp="1578219840985">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2509" height="372" key="GridCell.Tab.0.right/0.0.2560.1400/2560.349.1920.1040@0.0.2560.1400" timestamp="1578219840985" />
+    <state width="2509" height="458" key="GridCell.Tab.1.bottom" timestamp="1578152878601">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2509" height="458" key="GridCell.Tab.1.bottom/0.0.2560.1400/2560.349.1920.1040@0.0.2560.1400" timestamp="1578152878601" />
+    <state width="2509" height="458" key="GridCell.Tab.1.center" timestamp="1578152878601">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2509" height="458" key="GridCell.Tab.1.center/0.0.2560.1400/2560.349.1920.1040@0.0.2560.1400" timestamp="1578152878601" />
+    <state width="2509" height="458" key="GridCell.Tab.1.left" timestamp="1578152878601">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2509" height="458" key="GridCell.Tab.1.left/0.0.2560.1400/2560.349.1920.1040@0.0.2560.1400" timestamp="1578152878601" />
+    <state width="2509" height="458" key="GridCell.Tab.1.right" timestamp="1578152878601">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2509" height="458" key="GridCell.Tab.1.right/0.0.2560.1400/2560.349.1920.1040@0.0.2560.1400" timestamp="1578152878601" />
+    <state x="657" y="258" key="SettingsEditor" timestamp="1578147312435">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="657" y="258" key="SettingsEditor/0.0.2560.1400/2560.349.1920.1040@0.0.2560.1400" timestamp="1578147312435" />
+    <state x="852" y="327" key="run.anything.popup" timestamp="1578047210620">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="852" y="327" key="run.anything.popup/0.0.2560.1400/2560.349.1920.1040@0.0.2560.1400" timestamp="1578047210620" />
+    <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup" timestamp="1578048866401">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup/0.0.2560.1400/2560.349.1920.1040@0.0.2560.1400" timestamp="1578048866401" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="F:\SoftwareProjects\CLionProjects\CPP\VectorT\cmake-build-debug" NAME="Fixture Coverage Results" MODIFIED="1578152864541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="gcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

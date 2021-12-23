@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.15)
+project(VectorT)
+
+set(CMAKE_CXX_STANDARD 17)
+set(EXE_SOURCE_FILES VectorT.cpp VectorT.h main.cpp)
+
+add_executable(VectorT ${EXE_SOURCE})

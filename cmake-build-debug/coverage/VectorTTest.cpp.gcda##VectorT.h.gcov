@@ -1,0 +1,189 @@
+        -:    0:Source:F:/SoftwareProjects/CLionProjects/CPP/VectorT/src/VectorT.h
+        -:    0:Graph:F:\SoftwareProjects\CLionProjects\CPP\VectorT\cmake-build-debug\test\tests\CMakeFiles\Google_Tests_run.dir\VectorTTest.cpp.gcno
+        -:    0:Data:F:\SoftwareProjects\CLionProjects\CPP\VectorT\cmake-build-debug\test\tests\CMakeFiles\Google_Tests_run.dir\VectorTTest.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#ifndef VECTORT_VECTORT_H
+        -:    2:#define VECTORT_VECTORT_H
+        -:    3:
+        -:    4:#include <cstdlib>
+        -:    5:#include <iostream>
+        -:    6:
+        -:    7:
+        -:    8:namespace Assignment08 {
+        -:    9:
+        -:   10:    template<typename T>
+        -:   11:    class VectorT {
+        -:   12:
+        -:   13:    private:
+        -:   14:
+        -:   15:        // The dimension of the vector
+        -:   16:        std::size_t dimension{};
+        -:   17:
+        -:   18:        // Dynamic array for the elements of the vector
+        -:   19:        T *container;
+        -:   20:
+        -:   21:
+        -:   22:    public:
+        -:   23:
+        -:   24:        /**
+        -:   25:         * Default constructor.
+        -:   26:         * dimension = 2, initializer = null
+        -:   27:         */
+        -:   28:        VectorT();
+        -:   29:
+        -:   30:        /***
+        -:   31:         * Constructor with two parameters(dim, init).
+        -:   32:         * @param dim Specifies the dim of of the vector.
+        -:   33:         * @param init Initialize the elements of the Vector with this value
+        -:   34:         */
+        -:   35:        VectorT(std::size_t dim, T init);
+        -:   36:
+        -:   37:        /**
+        -:   38:         * Copy constructor.
+        -:   39:         * @param vectorT Reference to another Vector<T>
+        -:   40:         */
+        -:   41:        VectorT(const VectorT<T> &vectorT) = default;
+        -:   42:
+        -:   43:        /**
+        -:   44:         * Destructor.
+        -:   45:         */
+      42*:   46:        virtual ~VectorT() {
+      126:   47:            delete[] container;
+      42*:   48:        }
+------------------
+_ZN12Assignment087VectorTI7StudentED0Ev:
+    #####:   46:        virtual ~VectorT() {
+        -:   47:            delete[] container;
+    #####:   48:        }
+    %%%%%:   48-block  0
+------------------
+_ZN12Assignment087VectorTI7StudentED1Ev:
+       12:   46:        virtual ~VectorT() {
+       63:   47:            delete[] container;
+       12:   47-block  0
+       63:   47-block  1
+       51:   47-block  2
+       12:   47-block  3
+       12:   48:        }
+       12:   48-block  0
+------------------
+_ZN12Assignment087VectorTISt6vectorIiSaIiEEED0Ev:
+    #####:   46:        virtual ~VectorT() {
+        -:   47:            delete[] container;
+    #####:   48:        }
+    %%%%%:   48-block  0
+------------------
+_ZN12Assignment087VectorTISt6vectorIiSaIiEEED1Ev:
+       12:   46:        virtual ~VectorT() {
+       45:   47:            delete[] container;
+       12:   47-block  0
+       45:   47-block  1
+       33:   47-block  2
+       12:   47-block  3
+       12:   48:        }
+       12:   48-block  0
+------------------
+_ZN12Assignment087VectorTIdED0Ev:
+    #####:   46:        virtual ~VectorT() {
+        -:   47:            delete[] container;
+    #####:   48:        }
+    %%%%%:   48-block  0
+------------------
+_ZN12Assignment087VectorTIdED1Ev:
+       18:   46:        virtual ~VectorT() {
+       18:   47:            delete[] container;
+       18:   47-block  0
+       18:   48:        }
+       18:   48-block  0
+------------------
+        -:   49:
+        -:   50:        /**
+        -:   51:         * Get the size of the vector.
+        -:   52:         * @return dimension of the Vector<T>
+        -:   53:         */
+        -:   54:        std::size_t size();
+        -:   55:
+        -:   56:        /**
+        -:   57:         * Allow to dynamically resize the Vector.
+        -:   58:         * @param newSize The New Size
+        -:   59:         */
+        -:   60:        void resize(std::size_t newSize);
+        -:   61:
+        -:   62:        /**
+        -:   63:         * Insert another vector<T> at specified index into the vector.
+        -:   64:         * @param vector The Vector to be inserted
+        -:   65:         * @param index The index where to insert the vector
+        -:   66:         */
+        -:   67:        void insert(VectorT<T> &vector, std::size_t index);
+        -:   68:
+        -:   69:        /**
+        -:   70:         * Insert an element specified index into the vector.
+        -:   71:         * @param element The element to be inserted
+        -:   72:         * @param index The index where to insert the element
+        -:   73:         */
+        -:   74:        void insert(T &element, std::size_t index);
+        -:   75:
+        -:   76:        /**
+        -:   77:         * Removes an element of the vector.
+        -:   78:         * Also, closes the gab by shifting the elements after the removed element one index to the left
+        -:   79:         * @param index The index of the element to be removed
+        -:   80:         * @return Reference to the removed element
+        -:   81:         */
+        -:   82:        void remove(std::size_t index);
+        -:   83:
+        -:   84:        /**
+        -:   85:         * Swap two VectorT.
+        -:   86:         * @param vector The vector to swap with
+        -:   87:         * @return Reference to the calling object after swapping
+        -:   88:         */
+        -:   89:        void swap(VectorT<T> &vector);
+        -:   90:
+        -:   91:        /**
+        -:   92:         * Overloading the operator[].
+        -:   93:         * Const version.
+        -:   94:         * @param index the index of the element to be accessed
+        -:   95:         * @return Constant reference to the element at the specified index
+        -:   96:         */
+        -:   97:        const T &operator[](std::size_t index) const;
+        -:   98:
+        -:   99:        /**
+        -:  100:         * Overloading the operator[].
+        -:  101:         * Non-Const version.
+        -:  102:         * @param index the index of the element to be accessed
+        -:  103:         * @return Reference to the element at the specified index
+        -:  104:         */
+        -:  105:        T &operator[](std::size_t index);
+        -:  106:
+        -:  107:        /**
+        -:  108:         * Overloading the operator= .
+        -:  109:         * @param vector Constant reference to the other vector.
+        -:  110:         * @return Reference to the newly assigned vector.
+        -:  111:         */
+        -:  112:        VectorT<T> &operator=(const VectorT<T> &vector);
+        -:  113:
+        -:  114:        /**
+        -:  115:         * toString function.
+        -:  116:         * @return String representation of the vector in the form
+        -:  117:                    (elem1, elem2, ..., elemN)
+        -:  118:         */
+        -:  119:        std::string toString();
+        -:  120:
+        -:  121:
+        -:  122:        /**
+        -:  123:         * Overloading the operator<<
+        -:  124:         * @param ostream Reference to the output stream
+        -:  125:         * @param vectorT Constant reference to the vector to be copied
+        -:  126:         * @return Reference to the output stream
+        -:  127:         */
+        -:  128:
+        -:  129:        friend std::ostream &operator<<(std::ostream &ostream, const VectorT<T> &vectorT) {
+        -:  130:            for (int i = 0; i < vectorT.dimension; ++i) {
+        -:  131:                ostream << vectorT.container[i] << " ";
+        -:  132:            }
+        -:  133:            return ostream;
+        -:  134:        }
+        -:  135:    };
+        -:  136:
+        -:  137:}
+        -:  138:#endif //VECTORT_VECTORT_H

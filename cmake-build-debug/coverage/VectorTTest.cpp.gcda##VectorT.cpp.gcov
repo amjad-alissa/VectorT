@@ -1,0 +1,515 @@
+        -:    0:Source:F:/SoftwareProjects/CLionProjects/CPP/VectorT/src/VectorT.cpp
+        -:    0:Graph:F:\SoftwareProjects\CLionProjects\CPP\VectorT\cmake-build-debug\test\tests\CMakeFiles\Google_Tests_run.dir\VectorTTest.cpp.gcno
+        -:    0:Data:F:\SoftwareProjects\CLionProjects\CPP\VectorT\cmake-build-debug\test\tests\CMakeFiles\Google_Tests_run.dir\VectorTTest.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include <sstream>
+        -:    2:#include "VectorT.h"
+        -:    3:
+        -:    4:namespace Assignment08 {
+        -:    5:
+        -:    6:    template<typename T>
+       24:    7:    VectorT<T>::VectorT() {
+       24:    8:        this->dimension = 2;
+      56*:    9:        this->container = new T[this->dimension];
+       24:   10:    }
+------------------
+_ZN12Assignment087VectorTISt6vectorIiSaIiEEEC1Ev:
+        8:    7:    VectorT<T>::VectorT() {
+        8:    8:        this->dimension = 2;
+      24*:    9:        this->container = new T[this->dimension];
+        8:    9-block  0
+        8:    9-block  1
+    %%%%%:    9-block  2
+        8:    9-block  3
+       24:    9-block  4
+       16:    9-block  5
+        8:   10:    }
+------------------
+_ZN12Assignment087VectorTI7StudentEC1Ev:
+        8:    7:    VectorT<T>::VectorT() {
+        8:    8:        this->dimension = 2;
+      24*:    9:        this->container = new T[this->dimension];
+        8:    9-block  0
+        8:    9-block  1
+    %%%%%:    9-block  2
+        8:    9-block  3
+       24:    9-block  4
+       16:    9-block  5
+        8:   10:    }
+------------------
+_ZN12Assignment087VectorTIdEC1Ev:
+        8:    7:    VectorT<T>::VectorT() {
+        8:    8:        this->dimension = 2;
+       8*:    9:        this->container = new T[this->dimension];
+        8:    9-block  0
+        8:    9-block  1
+    %%%%%:    9-block  2
+        8:    9-block  3
+        8:   10:    }
+------------------
+        -:   11:
+        -:   12:    template<typename T>
+       18:   13:    VectorT<T>::VectorT(std::size_t dim, T init) {
+       18:   14:        this->dimension = dim;
+      46*:   15:        this->container = new T[this->dimension];
+       78:   16:        for (std::size_t i = 0; i < this->dimension; ++i) {
+       60:   17:            this->container[i] = init;
+        -:   18:        }
+       18:   19:    }
+------------------
+_ZN12Assignment087VectorTI7StudentEC1EyS1_:
+        4:   13:    VectorT<T>::VectorT(std::size_t dim, T init) {
+        4:   14:        this->dimension = dim;
+      20*:   15:        this->container = new T[this->dimension];
+        4:   15-block  0
+        4:   15-block  1
+    %%%%%:   15-block  2
+        4:   15-block  3
+       20:   15-block  4
+       16:   15-block  5
+       20:   16:        for (std::size_t i = 0; i < this->dimension; ++i) {
+        4:   16-block  0
+       20:   16-block  1
+       16:   17:            this->container[i] = init;
+       16:   17-block  0
+        -:   18:        }
+        4:   19:    }
+------------------
+_ZN12Assignment087VectorTISt6vectorIiSaIiEEEC1EyS3_:
+        4:   13:    VectorT<T>::VectorT(std::size_t dim, T init) {
+        4:   14:        this->dimension = dim;
+      16*:   15:        this->container = new T[this->dimension];
+        4:   15-block  0
+        4:   15-block  1
+    %%%%%:   15-block  2
+        4:   15-block  3
+       16:   15-block  4
+       12:   15-block  5
+       16:   16:        for (std::size_t i = 0; i < this->dimension; ++i) {
+        4:   16-block  0
+       16:   16-block  1
+       12:   17:            this->container[i] = init;
+       12:   17-block  0
+        -:   18:        }
+        4:   19:    }
+------------------
+_ZN12Assignment087VectorTIdEC1Eyd:
+       10:   13:    VectorT<T>::VectorT(std::size_t dim, T init) {
+       10:   14:        this->dimension = dim;
+      10*:   15:        this->container = new T[this->dimension];
+       10:   15-block  0
+       10:   15-block  1
+    %%%%%:   15-block  2
+       10:   15-block  3
+       42:   16:        for (std::size_t i = 0; i < this->dimension; ++i) {
+       42:   16-block  0
+       32:   17:            this->container[i] = init;
+       32:   17-block  0
+        -:   18:        }
+       10:   19:    }
+------------------
+        -:   20:
+        -:   21:    template<typename T>
+       10:   22:    inline std::size_t VectorT<T>::size() {
+       10:   23:        return this->dimension;
+        -:   24:    }
+------------------
+_ZN12Assignment087VectorTI7StudentE4sizeEv:
+        3:   22:    inline std::size_t VectorT<T>::size() {
+        3:   23:        return this->dimension;
+        3:   23-block  0
+        -:   24:    }
+------------------
+_ZN12Assignment087VectorTISt6vectorIiSaIiEEE4sizeEv:
+        3:   22:    inline std::size_t VectorT<T>::size() {
+        3:   23:        return this->dimension;
+        3:   23-block  0
+        -:   24:    }
+------------------
+_ZN12Assignment087VectorTIdE4sizeEv:
+        4:   22:    inline std::size_t VectorT<T>::size() {
+        4:   23:        return this->dimension;
+        4:   23-block  0
+        -:   24:    }
+------------------
+        -:   25:
+        -:   26:    template<typename T>
+        2:   27:    void VectorT<T>::resize(std::size_t newSize) {
+        -:   28:
+       2*:   29:        std::size_t min = (newSize < this->dimension ? newSize : this->dimension);
+      20*:   30:        T *temp = new T[newSize];;
+        -:   31:
+        8:   32:        for (int i = 0; i < min; ++i) {
+        6:   33:            temp[i] = this->container[i];
+        -:   34:        }
+        -:   35:
+        8:   36:        delete[] this->container;
+        2:   37:        this->dimension = newSize;
+        2:   38:        this->container = temp;
+        2:   39:    }
+------------------
+_ZN12Assignment087VectorTISt6vectorIiSaIiEEE6resizeEy:
+        1:   27:    void VectorT<T>::resize(std::size_t newSize) {
+        -:   28:
+       1*:   29:        std::size_t min = (newSize < this->dimension ? newSize : this->dimension);
+        1:   29-block  0
+        1:   29-block  1
+    %%%%%:   29-block  2
+       4*:   30:        T *temp = new T[newSize];;
+        1:   30-block  0
+        1:   30-block  1
+    %%%%%:   30-block  2
+        1:   30-block  3
+        4:   30-block  4
+        3:   30-block  5
+        -:   31:
+        3:   32:        for (int i = 0; i < min; ++i) {
+        1:   32-block  0
+        3:   32-block  1
+        2:   33:            temp[i] = this->container[i];
+        2:   33-block  0
+        -:   34:        }
+        -:   35:
+        3:   36:        delete[] this->container;
+        1:   36-block  0
+        1:   36-block  1
+        3:   36-block  2
+        2:   36-block  3
+        1:   36-block  4
+        1:   37:        this->dimension = newSize;
+        1:   38:        this->container = temp;
+        1:   39:    }
+------------------
+_ZN12Assignment087VectorTI7StudentE6resizeEy:
+        1:   27:    void VectorT<T>::resize(std::size_t newSize) {
+        -:   28:
+       1*:   29:        std::size_t min = (newSize < this->dimension ? newSize : this->dimension);
+        1:   29-block  0
+        1:   29-block  1
+    %%%%%:   29-block  2
+      16*:   30:        T *temp = new T[newSize];;
+        1:   30-block  0
+        1:   30-block  1
+    %%%%%:   30-block  2
+        1:   30-block  3
+       16:   30-block  4
+       15:   30-block  5
+        -:   31:
+        5:   32:        for (int i = 0; i < min; ++i) {
+        1:   32-block  0
+        5:   32-block  1
+        4:   33:            temp[i] = this->container[i];
+        4:   33-block  0
+        -:   34:        }
+        -:   35:
+        5:   36:        delete[] this->container;
+        1:   36-block  0
+        1:   36-block  1
+        5:   36-block  2
+        4:   36-block  3
+        1:   36-block  4
+        1:   37:        this->dimension = newSize;
+        1:   38:        this->container = temp;
+        1:   39:    }
+------------------
+        -:   40:
+        -:   41:    template<typename T>
+        1:   42:    void VectorT<T>::insert(VectorT<T> &vector, std::size_t index) {
+       1*:   43:        T *temp = new T[this->dimension + vector.dimension];
+        1:   43-block  0
+        1:   43-block  1
+    %%%%%:   43-block  2
+        1:   43-block  3
+        -:   44:
+        -:   45:        // copy all the elements of the original vector uo to the insertion index
+        2:   46:        for (std::size_t i = 0; i < index; ++i) {
+        2:   46-block  0
+        1:   47:            temp[i] = this->container[i];
+        1:   47-block  0
+        -:   48:        }
+        -:   49:
+        -:   50:        // insert the vector vector at the insertion index onwards
+        1:   51:        std::size_t ind = index;
+        3:   52:        for (std::size_t j = 0; j < vector.dimension; ++j) {
+        1:   52-block  0
+        3:   52-block  1
+        2:   53:            temp[ind++] = vector.container[j];
+        2:   53-block  0
+        -:   54:        }
+        -:   55:
+        -:   56:        // copy all the elements from the insertion point to the end of the original vector
+        2:   57:        for (std::size_t k = index; k < this->dimension; ++k) {
+        1:   57-block  0
+        2:   57-block  1
+        1:   58:            temp[ind++] = this->container[k];
+        1:   58-block  0
+        -:   59:        }
+        -:   60:
+        1:   61:        delete[] this->container;
+        1:   61-block  0
+        1:   61-block  1
+        1:   62:        this->dimension += vector.dimension;
+        1:   63:        this->container = temp;
+        -:   64:
+        1:   65:    }
+        -:   66:
+        -:   67:    template<typename T>
+        1:   68:    void VectorT<T>::insert(T &element, std::size_t index) {
+        -:   69:
+       1*:   70:        T *temp = new T[this->dimension + 1];
+        1:   70-block  0
+        1:   70-block  1
+    %%%%%:   70-block  2
+        1:   70-block  3
+        -:   71:
+        -:   72:        // copy all the elements of the original vector uo to the insertion index
+        2:   73:        for (std::size_t i = 0; i < index; ++i) {
+        2:   73-block  0
+        1:   74:            temp[i] = this->container[i];
+        1:   74-block  0
+        -:   75:        }
+        -:   76:
+        -:   77:        // insert the element at the insertion index
+        1:   78:        temp[index] = element;
+        -:   79:
+        -:   80:        // copy all the elements from the insertion point to the end of the original vector
+        2:   81:        for (std::size_t j = index; j < this->dimension; ++j) {
+        1:   81-block  0
+        2:   81-block  1
+        1:   82:            temp[++index] = this->container[j];
+        1:   82-block  0
+        -:   83:        }
+        -:   84:
+        1:   85:        delete[] this->container;
+        1:   85-block  0
+        1:   85-block  1
+        1:   86:        this->dimension += 1;
+        1:   87:        this->container = temp;
+        -:   88:
+        1:   89:    }
+        -:   90:
+        -:   91:    template<typename T>
+        2:   92:    void VectorT<T>::remove(std::size_t index) {
+        -:   93:
+       2*:   94:        T *temp = new T[this->dimension - 1];
+        2:   94-block  0
+        2:   94-block  1
+    %%%%%:   94-block  2
+        2:   94-block  3
+        -:   95:
+        2:   96:        std::size_t tempIndex = 0;
+        4:   97:        for (std::size_t i = 0; i < index; ++i) {
+        4:   97-block  0
+        2:   98:            temp[tempIndex++] = this->container[i];
+        2:   98-block  0
+        -:   99:        }
+        -:  100:
+        5:  101:        for (std::size_t j = index + 1; j < this->dimension; ++j) {
+        2:  101-block  0
+        5:  101-block  1
+        3:  102:            temp[tempIndex++] = this->container[j];
+        3:  102-block  0
+        -:  103:        }
+        -:  104:
+        2:  105:        delete[] this->container;
+        2:  105-block  0
+        2:  105-block  1
+        2:  106:        this->dimension -= 1;
+        2:  107:        this->container = temp;
+        -:  108:
+        2:  109:    }
+        -:  110:
+        -:  111:    template<typename T>
+        3:  112:    const T &VectorT<T>::operator[](std::size_t index) const {
+        3:  113:        if (index < 0 || index >= dimension) {
+        3:  113-block  0
+        1:  114:            throw std::out_of_range("Illegal access");
+        1:  114-block  0
+        1:  114-block  1
+    $$$$$:  114-block  2
+        -:  115:        } else {
+        2:  116:            return this->container[index];
+        2:  116-block  0
+        2:  116-block  1
+        -:  117:        }
+        -:  118:    }
+        -:  119:
+        -:  120:    template<typename T>
+       20:  121:    T &VectorT<T>::operator[](std::size_t index) {
+       20:  122:        if (index < 0 || index >= dimension) {
+        3:  123:            throw std::out_of_range("Illegal access");
+        -:  124:        } else {
+       17:  125:            return this->container[index];
+        -:  126:        }
+        -:  127:    }
+------------------
+_ZN12Assignment087VectorTI7StudentEixEy:
+        3:  121:    T &VectorT<T>::operator[](std::size_t index) {
+        3:  122:        if (index < 0 || index >= dimension) {
+        3:  122-block  0
+        1:  123:            throw std::out_of_range("Illegal access");
+        1:  123-block  0
+        1:  123-block  1
+    $$$$$:  123-block  2
+        -:  124:        } else {
+        2:  125:            return this->container[index];
+        2:  125-block  0
+        2:  125-block  1
+        -:  126:        }
+        -:  127:    }
+------------------
+_ZN12Assignment087VectorTIdEixEy:
+       17:  121:    T &VectorT<T>::operator[](std::size_t index) {
+       17:  122:        if (index < 0 || index >= dimension) {
+       17:  122-block  0
+        2:  123:            throw std::out_of_range("Illegal access");
+        2:  123-block  0
+        2:  123-block  1
+    $$$$$:  123-block  2
+        -:  124:        } else {
+       15:  125:            return this->container[index];
+       15:  125-block  0
+       15:  125-block  1
+        -:  126:        }
+        -:  127:    }
+------------------
+        -:  128:
+        -:  129:    template<typename T>
+       16:  130:    VectorT<T> &VectorT<T>::operator=(const VectorT<T> &vector) {
+        -:  131:
+       16:  132:        if (&vector != this) {
+       32:  133:            delete[] this->container;
+       16:  134:            this->dimension = vector.dimension;
+      44*:  135:            this->container = new T[this->dimension];
+       16:  136:            std::copy(vector.container, vector.container + vector.dimension, this->container);
+        -:  137:        }
+        -:  138:
+       16:  139:        return *this;
+        -:  140:    }
+------------------
+_ZN12Assignment087VectorTI7StudentEaSERKS2_:
+        4:  130:    VectorT<T> &VectorT<T>::operator=(const VectorT<T> &vector) {
+        -:  131:
+        4:  132:        if (&vector != this) {
+        4:  132-block  0
+       12:  133:            delete[] this->container;
+        4:  133-block  0
+        4:  133-block  1
+       12:  133-block  2
+        8:  133-block  3
+        4:  133-block  4
+        4:  134:            this->dimension = vector.dimension;
+      20*:  135:            this->container = new T[this->dimension];
+        4:  135-block  0
+        4:  135-block  1
+    %%%%%:  135-block  2
+        4:  135-block  3
+       20:  135-block  4
+       16:  135-block  5
+        4:  136:            std::copy(vector.container, vector.container + vector.dimension, this->container);
+        4:  136-block  0
+        -:  137:        }
+        -:  138:
+        4:  139:        return *this;
+        4:  139-block  0
+        -:  140:    }
+------------------
+_ZN12Assignment087VectorTISt6vectorIiSaIiEEEaSERKS4_:
+        4:  130:    VectorT<T> &VectorT<T>::operator=(const VectorT<T> &vector) {
+        -:  131:
+        4:  132:        if (&vector != this) {
+        4:  132-block  0
+       12:  133:            delete[] this->container;
+        4:  133-block  0
+        4:  133-block  1
+       12:  133-block  2
+        8:  133-block  3
+        4:  133-block  4
+        4:  134:            this->dimension = vector.dimension;
+      16*:  135:            this->container = new T[this->dimension];
+        4:  135-block  0
+        4:  135-block  1
+    %%%%%:  135-block  2
+        4:  135-block  3
+       16:  135-block  4
+       12:  135-block  5
+        4:  136:            std::copy(vector.container, vector.container + vector.dimension, this->container);
+        4:  136-block  0
+        -:  137:        }
+        -:  138:
+        4:  139:        return *this;
+        4:  139-block  0
+        -:  140:    }
+------------------
+_ZN12Assignment087VectorTIdEaSERKS1_:
+        8:  130:    VectorT<T> &VectorT<T>::operator=(const VectorT<T> &vector) {
+        -:  131:
+        8:  132:        if (&vector != this) {
+        8:  132-block  0
+        8:  133:            delete[] this->container;
+        8:  133-block  0
+        8:  133-block  1
+        8:  134:            this->dimension = vector.dimension;
+       8*:  135:            this->container = new T[this->dimension];
+        8:  135-block  0
+        8:  135-block  1
+    %%%%%:  135-block  2
+        8:  135-block  3
+        8:  136:            std::copy(vector.container, vector.container + vector.dimension, this->container);
+        -:  137:        }
+        -:  138:
+        8:  139:        return *this;
+        8:  139-block  0
+        -:  140:    }
+------------------
+        -:  141:
+        -:  142:    template<typename T>
+        1:  143:    void VectorT<T>::swap(VectorT<T> &vector) {
+        1:  144:        std::size_t dim = vector.dimension;
+        1:  145:        T *cont = vector.container;
+        -:  146:
+        1:  147:        vector.dimension = this->dimension;
+        1:  148:        vector.container = this->container;
+        -:  149:
+        1:  150:        this->dimension = dim;
+        1:  151:        this->container = cont;
+        1:  152:    }
+        -:  153:
+        -:  154:    template<typename T>
+        1:  155:    std::string VectorT<T>::toString() {
+        2:  156:        std::stringstream result;
+        1:  156-block  0
+        1:  156-block  1
+    $$$$$:  156-block  2
+        -:  157:
+        1:  158:        result << '(';
+        1:  158-block  0
+        -:  159:
+        6:  160:        for (int i = 0; i < this->dimension; ++i) {
+        1:  160-block  0
+        6:  160-block  1
+        5:  160-block  2
+        5:  161:            if (i == dimension - 1) {
+        5:  161-block  0
+        1:  162:                result << this->container[i];
+        1:  162-block  0
+        -:  163:            } else {
+        4:  164:                result << this->container[i] << ", ";
+        4:  164-block  0
+        4:  164-block  1
+        -:  165:            }
+        -:  166:        }
+        -:  167:        char ch;
+        1:  168:        result >> ch >> ch;
+        1:  168-block  0
+        1:  168-block  1
+        1:  169:        result << ')';
+        1:  169-block  0
+        -:  170:
+        2:  171:        return result.str();
+        1:  171-block  0
+        1:  171-block  1
+        1:  171-block  2
+        -:  172:    }
+        -:  173:}

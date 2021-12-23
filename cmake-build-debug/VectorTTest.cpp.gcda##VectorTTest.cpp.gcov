@@ -1,0 +1,608 @@
+        -:    0:Source:F:/SoftwareProjects/CLionProjects/CPP/VectorT/test/tests/VectorTTest.cpp
+        -:    0:Graph:F:\SoftwareProjects\CLionProjects\CPP\VectorT\cmake-build-debug\test\tests\CMakeFiles\Google_Tests_run.dir\VectorTTest.cpp.gcno
+        -:    0:Data:F:\SoftwareProjects\CLionProjects\CPP\VectorT\cmake-build-debug\test\tests\CMakeFiles\Google_Tests_run.dir\VectorTTest.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:
+        -:    2:#include "VectorT.h"
+        -:    3:#include "VectorT.cpp"
+        -:    4:
+        -:    5:#include <utility>
+        -:    6:#include "gtest/gtest.h"
+        -:    7:
+        -:    8:using namespace Assignment08;
+        -:    9:
+        -:   10:class Student {
+        -:   11:public:
+        -:   12:    std::string name;
+        -:   13:    int age{};
+        -:   14:
+       63:   15:    Student() = default;
+       63:   15-block  0
+        -:   16:
+        4:   17:    Student(std::string n, int a) : name(std::move(n)), age(a) {}
+        4:   17-block  0
+        -:   18:
+       71:   19:    ~Student() = default;
+       71:   19-block  0
+        -:   20:};
+        -:   21:
+        -:   22:
+        -:   23:class Fixture : public ::testing::Test {
+        -:   24:
+        -:   25:public:
+        4:   26:    void SetUp() override {
+        -:   27:
+        4:   28:        std::size_t size = 0;
+        4:   29:        vectorTDouble2 = VectorT(size + 5, 1.0);
+        4:   29-block  0
+        4:   29-block  1
+        4:   29-block  2
+    $$$$$:   29-block  3
+    $$$$$:   29-block  4
+        4:   30:        vectorTDouble1 = VectorT(size + 2, 0.0);
+        4:   30-block  0
+        4:   30-block  1
+    $$$$$:   30-block  2
+    $$$$$:   30-block  3
+        -:   31:
+        8:   32:        std::vector<int> v2;
+    $$$$$:   32-block  0
+        4:   33:        vectorTContainer1 = VectorT(size + 3, v2);
+        4:   33-block  0
+        4:   33-block  1
+        4:   33-block  2
+    $$$$$:   33-block  3
+    $$$$$:   33-block  4
+    $$$$$:   33-block  5
+    $$$$$:   33-block  6
+        -:   34:
+        8:   35:        std::string n = "Alex";
+    $$$$$:   35-block  0
+    $$$$$:   35-block  1
+        4:   36:        int a = 22;
+        4:   37:        Student s1(n, a);
+        4:   37-block  0
+    $$$$$:   37-block  1
+        4:   38:        vectorTObj1 = VectorT(size + 4, s1);
+        4:   38-block  0
+        4:   38-block  1
+        4:   38-block  2
+    $$$$$:   38-block  3
+    $$$$$:   38-block  4
+    $$$$$:   38-block  5
+    $$$$$:   38-block  6
+        4:   39:    }
+        -:   40:
+        4:   41:    void TearDown() override {}
+        -:   42:
+        -:   43:    VectorT<double> vectorTDouble1;
+        -:   44:    VectorT<double> vectorTDouble2;
+        -:   45:
+        -:   46:    VectorT<Student> vectorTObj1;
+        -:   47:    VectorT<Student> vectorTObj2;
+        -:   48:
+        -:   49:    VectorT<std::vector<int> > vectorTContainer1;
+        -:   50:    VectorT<std::vector<int> > vectorTContainer2;
+        -:   51:
+        -:   52:};
+        -:   53:
+        2:   54:TEST_F(Fixture, Fixture_Constructor_Test) {
+        -:   55:
+       1*:   56:    ASSERT_EQ(vectorTDouble1.size(), 2);
+       1*:   57:    ASSERT_EQ(vectorTDouble2.size(), 5);
+        -:   58:
+       1*:   59:    ASSERT_EQ(vectorTContainer1.size(), 3);
+       1*:   60:    ASSERT_EQ(vectorTContainer2.size(), 2);
+        -:   61:
+       1*:   62:    ASSERT_EQ(vectorTObj1.size(), 4);
+       1*:   63:    ASSERT_EQ(vectorTObj2.size(), 2);
+        -:   64:
+        -:   65:}
+------------------
+_ZN37Fixture_Fixture_Constructor_Test_Test8TestBodyEv:
+        1:   54:TEST_F(Fixture, Fixture_Constructor_Test) {
+        -:   55:
+       1*:   56:    ASSERT_EQ(vectorTDouble1.size(), 2);
+        1:   56-block  0
+        1:   56-block  1
+    %%%%%:   56-block  2
+    %%%%%:   56-block  3
+    %%%%%:   56-block  4
+    %%%%%:   56-block  5
+    $$$$$:   56-block  6
+    $$$$$:   56-block  7
+    $$$$$:   56-block  8
+    $$$$$:   56-block  9
+    $$$$$:   56-block 10
+    $$$$$:   56-block 11
+    $$$$$:   56-block 12
+       1*:   57:    ASSERT_EQ(vectorTDouble2.size(), 5);
+        1:   57-block  0
+        1:   57-block  1
+    %%%%%:   57-block  2
+    %%%%%:   57-block  3
+    %%%%%:   57-block  4
+    %%%%%:   57-block  5
+    $$$$$:   57-block  6
+    $$$$$:   57-block  7
+    $$$$$:   57-block  8
+    $$$$$:   57-block  9
+    $$$$$:   57-block 10
+    $$$$$:   57-block 11
+    $$$$$:   57-block 12
+        -:   58:
+       1*:   59:    ASSERT_EQ(vectorTContainer1.size(), 3);
+        1:   59-block  0
+        1:   59-block  1
+    %%%%%:   59-block  2
+    %%%%%:   59-block  3
+    %%%%%:   59-block  4
+    %%%%%:   59-block  5
+    $$$$$:   59-block  6
+    $$$$$:   59-block  7
+    $$$$$:   59-block  8
+    $$$$$:   59-block  9
+    $$$$$:   59-block 10
+    $$$$$:   59-block 11
+    $$$$$:   59-block 12
+       1*:   60:    ASSERT_EQ(vectorTContainer2.size(), 2);
+        1:   60-block  0
+        1:   60-block  1
+    %%%%%:   60-block  2
+    %%%%%:   60-block  3
+    %%%%%:   60-block  4
+    %%%%%:   60-block  5
+    $$$$$:   60-block  6
+    $$$$$:   60-block  7
+    $$$$$:   60-block  8
+    $$$$$:   60-block  9
+    $$$$$:   60-block 10
+    $$$$$:   60-block 11
+    $$$$$:   60-block 12
+        -:   61:
+       1*:   62:    ASSERT_EQ(vectorTObj1.size(), 4);
+        1:   62-block  0
+        1:   62-block  1
+    %%%%%:   62-block  2
+    %%%%%:   62-block  3
+    %%%%%:   62-block  4
+    %%%%%:   62-block  5
+    $$$$$:   62-block  6
+    $$$$$:   62-block  7
+    $$$$$:   62-block  8
+    $$$$$:   62-block  9
+    $$$$$:   62-block 10
+    $$$$$:   62-block 11
+    $$$$$:   62-block 12
+       1*:   63:    ASSERT_EQ(vectorTObj2.size(), 2);
+        1:   63-block  0
+        1:   63-block  1
+    %%%%%:   63-block  2
+    %%%%%:   63-block  3
+    %%%%%:   63-block  4
+    %%%%%:   63-block  5
+    $$$$$:   63-block  6
+    $$$$$:   63-block  7
+    $$$$$:   63-block  8
+    $$$$$:   63-block  9
+    $$$$$:   63-block 10
+    $$$$$:   63-block 11
+    $$$$$:   63-block 12
+        -:   64:
+        -:   65:}
+------------------
+_ZN37Fixture_Fixture_Constructor_Test_TestC1Ev:
+        1:   54:TEST_F(Fixture, Fixture_Constructor_Test) {
+        1:   54-block  0
+------------------
+        -:   66:
+        2:   67:TEST_F(Fixture, Fixture_Index_Operator_Test) {
+        -:   68:
+        1:   69:    vectorTDouble1[0] = 3.75;
+       1*:   70:    ASSERT_EQ(vectorTDouble1[0], 3.75);
+       1*:   71:    ASSERT_EQ(vectorTDouble1[1], 0.0);
+       2*:   72:    ASSERT_THROW(vectorTDouble1[-1], std::out_of_range);
+        -:   73:
+       1*:   74:    ASSERT_EQ(vectorTDouble2[0], 1.0);
+       1*:   75:    ASSERT_EQ(vectorTDouble2[1], 1.0);
+       1*:   76:    ASSERT_EQ(vectorTDouble2[2], 1.0);
+       2*:   77:    ASSERT_THROW(vectorTDouble2[5], std::out_of_range);
+        -:   78:
+        1:   79:    std::string name = "Alex";
+        1:   80:    int age = 22;
+        -:   81:
+       1*:   82:    ASSERT_EQ(vectorTObj1[0].name, name);
+       1*:   83:    ASSERT_EQ(vectorTObj1[0].age, age);
+       2*:   84:    ASSERT_THROW(vectorTObj1[4], std::out_of_range);
+        -:   85:
+        1:   86:    const VectorT<double> conVec(2,1.0);
+       1*:   87:    ASSERT_EQ(conVec[0], 1.0);
+       1*:   88:    ASSERT_EQ(conVec[1], 1.0);
+       2*:   89:    ASSERT_THROW(conVec[-3], std::out_of_range);
+        -:   90:}
+------------------
+_ZN40Fixture_Fixture_Index_Operator_Test_Test8TestBodyEv:
+        1:   67:TEST_F(Fixture, Fixture_Index_Operator_Test) {
+        -:   68:
+        1:   69:    vectorTDouble1[0] = 3.75;
+        1:   69-block  0
+       1*:   70:    ASSERT_EQ(vectorTDouble1[0], 3.75);
+        1:   70-block  0
+        1:   70-block  1
+        1:   70-block  2
+    %%%%%:   70-block  3
+    %%%%%:   70-block  4
+    %%%%%:   70-block  5
+    %%%%%:   70-block  6
+    $$$$$:   70-block  7
+    $$$$$:   70-block  8
+    $$$$$:   70-block  9
+    $$$$$:   70-block 10
+    $$$$$:   70-block 11
+    $$$$$:   70-block 12
+       1*:   71:    ASSERT_EQ(vectorTDouble1[1], 0.0);
+        1:   71-block  0
+        1:   71-block  1
+        1:   71-block  2
+    %%%%%:   71-block  3
+    %%%%%:   71-block  4
+    %%%%%:   71-block  5
+    %%%%%:   71-block  6
+    $$$$$:   71-block  7
+    $$$$$:   71-block  8
+    $$$$$:   71-block  9
+    $$$$$:   71-block 10
+    $$$$$:   71-block 11
+    $$$$$:   71-block 12
+       2*:   72:    ASSERT_THROW(vectorTDouble1[-1], std::out_of_range);
+        1:   72-block  0
+        1:   72-block  1
+        1:   72-block  2
+        1:   72-block  3
+        1:   72-block  4
+    %%%%%:   72-block  5
+    %%%%%:   72-block  6
+    %%%%%:   72-block  7
+    %%%%%:   72-block  8
+    %%%%%:   72-block  9
+        1:   72-block 10
+    $$$$$:   72-block 11
+    $$$$$:   72-block 12
+    $$$$$:   72-block 13
+    $$$$$:   72-block 14
+    $$$$$:   72-block 15
+        -:   73:
+       1*:   74:    ASSERT_EQ(vectorTDouble2[0], 1.0);
+        1:   74-block  0
+        1:   74-block  1
+        1:   74-block  2
+    %%%%%:   74-block  3
+    %%%%%:   74-block  4
+    %%%%%:   74-block  5
+    %%%%%:   74-block  6
+    $$$$$:   74-block  7
+    $$$$$:   74-block  8
+    $$$$$:   74-block  9
+    $$$$$:   74-block 10
+    $$$$$:   74-block 11
+    $$$$$:   74-block 12
+       1*:   75:    ASSERT_EQ(vectorTDouble2[1], 1.0);
+        1:   75-block  0
+        1:   75-block  1
+        1:   75-block  2
+    %%%%%:   75-block  3
+    %%%%%:   75-block  4
+    %%%%%:   75-block  5
+    %%%%%:   75-block  6
+    $$$$$:   75-block  7
+    $$$$$:   75-block  8
+    $$$$$:   75-block  9
+    $$$$$:   75-block 10
+    $$$$$:   75-block 11
+    $$$$$:   75-block 12
+       1*:   76:    ASSERT_EQ(vectorTDouble2[2], 1.0);
+        1:   76-block  0
+        1:   76-block  1
+        1:   76-block  2
+    %%%%%:   76-block  3
+    %%%%%:   76-block  4
+    %%%%%:   76-block  5
+    %%%%%:   76-block  6
+    $$$$$:   76-block  7
+    $$$$$:   76-block  8
+    $$$$$:   76-block  9
+    $$$$$:   76-block 10
+    $$$$$:   76-block 11
+    $$$$$:   76-block 12
+       2*:   77:    ASSERT_THROW(vectorTDouble2[5], std::out_of_range);
+        1:   77-block  0
+        1:   77-block  1
+        1:   77-block  2
+        1:   77-block  3
+        1:   77-block  4
+    %%%%%:   77-block  5
+    %%%%%:   77-block  6
+    %%%%%:   77-block  7
+    %%%%%:   77-block  8
+    %%%%%:   77-block  9
+        1:   77-block 10
+    $$$$$:   77-block 11
+    $$$$$:   77-block 12
+    $$$$$:   77-block 13
+    $$$$$:   77-block 14
+    $$$$$:   77-block 15
+        -:   78:
+        1:   79:    std::string name = "Alex";
+        1:   79-block  0
+    $$$$$:   79-block  1
+    $$$$$:   79-block  2
+        1:   80:    int age = 22;
+        -:   81:
+       1*:   82:    ASSERT_EQ(vectorTObj1[0].name, name);
+        1:   82-block  0
+        1:   82-block  1
+    %%%%%:   82-block  2
+    %%%%%:   82-block  3
+    %%%%%:   82-block  4
+    %%%%%:   82-block  5
+    $$$$$:   82-block  6
+    $$$$$:   82-block  7
+    $$$$$:   82-block  8
+    $$$$$:   82-block  9
+    $$$$$:   82-block 10
+       1*:   83:    ASSERT_EQ(vectorTObj1[0].age, age);
+        1:   83-block  0
+        1:   83-block  1
+        1:   83-block  2
+    %%%%%:   83-block  3
+    %%%%%:   83-block  4
+    %%%%%:   83-block  5
+    %%%%%:   83-block  6
+    $$$$$:   83-block  7
+    $$$$$:   83-block  8
+    $$$$$:   83-block  9
+    $$$$$:   83-block 10
+    $$$$$:   83-block 11
+       2*:   84:    ASSERT_THROW(vectorTObj1[4], std::out_of_range);
+        1:   84-block  0
+        1:   84-block  1
+        1:   84-block  2
+        1:   84-block  3
+        1:   84-block  4
+    %%%%%:   84-block  5
+    %%%%%:   84-block  6
+    %%%%%:   84-block  7
+    %%%%%:   84-block  8
+    %%%%%:   84-block  9
+        1:   84-block 10
+    $$$$$:   84-block 11
+    $$$$$:   84-block 12
+    $$$$$:   84-block 13
+    $$$$$:   84-block 14
+    $$$$$:   84-block 15
+        -:   85:
+        1:   86:    const VectorT<double> conVec(2,1.0);
+        1:   86-block  0
+    $$$$$:   86-block  1
+       1*:   87:    ASSERT_EQ(conVec[0], 1.0);
+        1:   87-block  0
+        1:   87-block  1
+        1:   87-block  2
+    %%%%%:   87-block  3
+    %%%%%:   87-block  4
+    %%%%%:   87-block  5
+    %%%%%:   87-block  6
+    $$$$$:   87-block  7
+    $$$$$:   87-block  8
+    $$$$$:   87-block  9
+    $$$$$:   87-block 10
+    $$$$$:   87-block 11
+    $$$$$:   87-block 12
+       1*:   88:    ASSERT_EQ(conVec[1], 1.0);
+        1:   88-block  0
+        1:   88-block  1
+        1:   88-block  2
+    %%%%%:   88-block  3
+    %%%%%:   88-block  4
+    %%%%%:   88-block  5
+    %%%%%:   88-block  6
+    $$$$$:   88-block  7
+    $$$$$:   88-block  8
+    $$$$$:   88-block  9
+    $$$$$:   88-block 10
+    $$$$$:   88-block 11
+    $$$$$:   88-block 12
+       2*:   89:    ASSERT_THROW(conVec[-3], std::out_of_range);
+        1:   89-block  0
+        1:   89-block  1
+        1:   89-block  2
+        1:   89-block  3
+        1:   89-block  4
+    %%%%%:   89-block  5
+    %%%%%:   89-block  6
+    %%%%%:   89-block  7
+    %%%%%:   89-block  8
+    %%%%%:   89-block  9
+        1:   89-block 10
+    $$$$$:   89-block 11
+    $$$$$:   89-block 12
+    $$$$$:   89-block 13
+    $$$$$:   89-block 14
+    $$$$$:   89-block 15
+        -:   90:}
+------------------
+_ZN40Fixture_Fixture_Index_Operator_Test_TestC1Ev:
+        1:   67:TEST_F(Fixture, Fixture_Index_Operator_Test) {
+        1:   67-block  0
+------------------
+        -:   91:
+        2:   92:TEST_F(Fixture, Fixture_Insert_Remove_Test) {
+        -:   93:
+        1:   94:    VectorT<double> temp(2,2.5);
+        -:   95:
+        1:   96:    vectorTDouble1.insert(temp, 1);
+       1*:   97:    ASSERT_EQ(vectorTDouble1[0], 0.0);
+       1*:   98:    ASSERT_EQ(vectorTDouble1[1], 2.5);
+       1*:   99:    ASSERT_EQ(vectorTDouble1[2], 2.5);
+       1*:  100:    ASSERT_EQ(vectorTDouble1[3], 0.0);
+        -:  101:
+        -:  102:
+        1:  103:    vectorTDouble1.remove(1);
+        1:  104:    vectorTDouble1.remove(1);
+       1*:  105:    ASSERT_EQ(vectorTDouble1[0], 0.0);
+       1*:  106:    ASSERT_EQ(vectorTDouble1[1], 0.0);
+        1:  107:    double d = 3.5;
+        1:  108:    vectorTDouble1.insert(d, 1);
+       1*:  109:    ASSERT_EQ(vectorTDouble1[1], 3.5);
+        -:  110:
+        -:  111:}
+------------------
+_ZN39Fixture_Fixture_Insert_Remove_Test_Test8TestBodyEv:
+        1:   92:TEST_F(Fixture, Fixture_Insert_Remove_Test) {
+        -:   93:
+        1:   94:    VectorT<double> temp(2,2.5);
+        1:   94-block  0
+    $$$$$:   94-block  1
+        -:   95:
+        1:   96:    vectorTDouble1.insert(temp, 1);
+        1:   96-block  0
+       1*:   97:    ASSERT_EQ(vectorTDouble1[0], 0.0);
+        1:   97-block  0
+        1:   97-block  1
+        1:   97-block  2
+    %%%%%:   97-block  3
+    %%%%%:   97-block  4
+    %%%%%:   97-block  5
+    %%%%%:   97-block  6
+    $$$$$:   97-block  7
+    $$$$$:   97-block  8
+    $$$$$:   97-block  9
+    $$$$$:   97-block 10
+    $$$$$:   97-block 11
+    $$$$$:   97-block 12
+       1*:   98:    ASSERT_EQ(vectorTDouble1[1], 2.5);
+        1:   98-block  0
+        1:   98-block  1
+        1:   98-block  2
+    %%%%%:   98-block  3
+    %%%%%:   98-block  4
+    %%%%%:   98-block  5
+    %%%%%:   98-block  6
+    $$$$$:   98-block  7
+    $$$$$:   98-block  8
+    $$$$$:   98-block  9
+    $$$$$:   98-block 10
+    $$$$$:   98-block 11
+    $$$$$:   98-block 12
+       1*:   99:    ASSERT_EQ(vectorTDouble1[2], 2.5);
+        1:   99-block  0
+        1:   99-block  1
+        1:   99-block  2
+    %%%%%:   99-block  3
+    %%%%%:   99-block  4
+    %%%%%:   99-block  5
+    %%%%%:   99-block  6
+    $$$$$:   99-block  7
+    $$$$$:   99-block  8
+    $$$$$:   99-block  9
+    $$$$$:   99-block 10
+    $$$$$:   99-block 11
+    $$$$$:   99-block 12
+       1*:  100:    ASSERT_EQ(vectorTDouble1[3], 0.0);
+        1:  100-block  0
+        1:  100-block  1
+        1:  100-block  2
+    %%%%%:  100-block  3
+    %%%%%:  100-block  4
+    %%%%%:  100-block  5
+    %%%%%:  100-block  6
+    $$$$$:  100-block  7
+    $$$$$:  100-block  8
+    $$$$$:  100-block  9
+    $$$$$:  100-block 10
+    $$$$$:  100-block 11
+    $$$$$:  100-block 12
+        -:  101:
+        -:  102:
+        1:  103:    vectorTDouble1.remove(1);
+        1:  103-block  0
+        1:  104:    vectorTDouble1.remove(1);
+        1:  104-block  0
+       1*:  105:    ASSERT_EQ(vectorTDouble1[0], 0.0);
+        1:  105-block  0
+        1:  105-block  1
+        1:  105-block  2
+    %%%%%:  105-block  3
+    %%%%%:  105-block  4
+    %%%%%:  105-block  5
+    %%%%%:  105-block  6
+    $$$$$:  105-block  7
+    $$$$$:  105-block  8
+    $$$$$:  105-block  9
+    $$$$$:  105-block 10
+    $$$$$:  105-block 11
+    $$$$$:  105-block 12
+       1*:  106:    ASSERT_EQ(vectorTDouble1[1], 0.0);
+        1:  106-block  0
+        1:  106-block  1
+        1:  106-block  2
+    %%%%%:  106-block  3
+    %%%%%:  106-block  4
+    %%%%%:  106-block  5
+    %%%%%:  106-block  6
+    $$$$$:  106-block  7
+    $$$$$:  106-block  8
+    $$$$$:  106-block  9
+    $$$$$:  106-block 10
+    $$$$$:  106-block 11
+    $$$$$:  106-block 12
+        1:  107:    double d = 3.5;
+        1:  108:    vectorTDouble1.insert(d, 1);
+        1:  108-block  0
+       1*:  109:    ASSERT_EQ(vectorTDouble1[1], 3.5);
+        1:  109-block  0
+        1:  109-block  1
+        1:  109-block  2
+    %%%%%:  109-block  3
+    %%%%%:  109-block  4
+    %%%%%:  109-block  5
+    %%%%%:  109-block  6
+    $$$$$:  109-block  7
+    $$$$$:  109-block  8
+    $$$$$:  109-block  9
+    $$$$$:  109-block 10
+    $$$$$:  109-block 11
+    $$$$$:  109-block 12
+        -:  110:
+        -:  111:}
+------------------
+_ZN39Fixture_Fixture_Insert_Remove_Test_TestC1Ev:
+        1:   92:TEST_F(Fixture, Fixture_Insert_Remove_Test) {
+        1:   92-block  0
+------------------
+        -:  112:
+        2:  113:TEST_F(Fixture, Fixture_Various_Tests) {
+        -:  114:
+        1:  115:    vectorTDouble1.swap(vectorTDouble2);
+        -:  116:
+       1*:  117:    ASSERT_EQ(vectorTDouble1.size(), 5);
+       1*:  118:    ASSERT_EQ(vectorTDouble1[0], 1.0);
+        -:  119:
+       1*:  120:    ASSERT_EQ(vectorTDouble2.size(), 2);
+       1*:  121:    ASSERT_EQ(vectorTDouble2[0], 0.0);
+        -:  122:
+        1:  123:    std::string str = vectorTDouble1.toString();
+        1:  124:    std::string str1 = "(1, 1, 1, 1, 1)";
+        -:  125:
+       1*:  126:    ASSERT_EQ(str,str1);
+        -:  127:
+        1:  128:    vectorTObj1.resize(15);
+        1:  129:    vectorTContainer2.resize(3);
+        -:  130:
+       1*:  131:    ASSERT_EQ(vectorTObj1.size(), 15);
+       1*:  132:    ASSERT_EQ(vectorTContainer2.size(), 3);
+        -:  133:
+        -:  134:}
+        -:  135:
+        -:  136:
